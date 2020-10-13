@@ -1,4 +1,4 @@
-# Plataforma de desafios da Code.education
+# Go lang gRPC
 
 ![Test](https://github.com/acampagnaro/go-grpc/workflows/Test/badge.svg?branch=master)
 
