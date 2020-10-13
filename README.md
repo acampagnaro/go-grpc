@@ -21,4 +21,4 @@ evans -r -p 8080
 
 ## Licença
 
-Esse projeto é open source, aceitará contribuições qualquer natureza para que a plataforma de desafios seja criada e está licenciado sob a [MIT license](https://opensource.org/licenses/MIT).
+Esse projeto é open source e está licenciado sob a [MIT license](https://opensource.org/licenses/MIT).
