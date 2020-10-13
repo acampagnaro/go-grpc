@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package education.code.codeedu;
+package gogrpc.code.acampagnaro;
 
 option go_package = "pb";
 

@@ -3,6 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
+	"net"
+	"os"
+
 	"github.com/acampagnaro/go-grpc/application/repositories"
 	"github.com/acampagnaro/go-grpc/application/usecases"
 	"github.com/acampagnaro/go-grpc/framework/pb"
@@ -13,9 +17,6 @@ import (
 	_ "github.com/lib/pq"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-	"log"
-	"net"
-	"os"
 )
 
 var db *gorm.DB
@@ -32,7 +33,7 @@ func main() {
 
 	db = utils.ConnectDB(os.Getenv("env"))
 
-	port := flag.Int("port", 0, "the server port")
+	port := flag.Int("port", 8080, "the server port")
 	flag.Parse()
 	log.Printf("start server on port %d", *port)
 
